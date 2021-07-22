@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4 ">
+            <form #form="ngForm" (ngSubmit)='create()'>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Description</label>
+                    <input type="text" name="Description" [(ngModel)]="obj.Description" class="form-control" placeholder="Cat Description" required #Description="ngModel">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Image Url</label>
+                    <input type="ImageUrl" name="ImageUrl" [(ngModel)]="obj.ImageUrl" class="form-control" placeholder="Image Url" required #ImageUrl="ngModel">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Create Cat</button>
+            </form>
+        </div>
+        <div class="col-lg-4"></div>
+
+    </div>
+</div>

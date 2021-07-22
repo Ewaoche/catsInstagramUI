@@ -1,0 +1,25 @@
+//cat
+.cat {
+    background-color: #efefef;
+    padding: 50px 100px;
+}
+
+.box {
+    background-color: #fff;
+    padding: 10px 20px;
+}
+
+.box img {
+    transition: all 1.5s ease;
+}
+
+.box img:hover {
+    transform: scale(1.5);
+}
+
+@media screen and (max-width:600px) {
+    .cat {
+        background-color: #efefef;
+        padding: 50px 10px;
+    }
+}
